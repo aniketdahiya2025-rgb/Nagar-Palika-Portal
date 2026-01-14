@@ -11,7 +11,6 @@ import "../App.css";
 function AdminDashboard() {
   return (
     <div className="w-full h-screen bg-gray-50 p-6 overflow-y-auto">
-      {/* Header Section */}
       <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
         <div className="mb-4">
           <h1 className="text-3xl font-bold text-emerald-900 mb-2">
@@ -21,8 +20,6 @@ function AdminDashboard() {
             Manage Applications & Monitor Services
           </p>
         </div>
-
-        {/* Search and Profile Section */}
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-between">
           <div className="relative flex-1 w-full">
             <IoIosSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl" />
@@ -39,8 +36,6 @@ function AdminDashboard() {
           </div>
         </div>
       </div>
-
-      {/* Statistics Overview */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-4">
         <div className="bg-white rounded-lg shadow-sm p-4 border-l-4 border-amber-500">
           <div className="flex items-center justify-between">
@@ -82,8 +77,6 @@ function AdminDashboard() {
           </div>
         </div>
       </div>
-
-      {/* Main Content Section */}
       <div className="bg-white rounded-lg shadow-sm p-4 mb-6">
         <h2 className="text-2xl font-bold text-emerald-900 mb-4">
           Quick Actions
@@ -102,20 +95,8 @@ function AdminDashboard() {
               Approve/Reject Applications
             </span>
           </div>
-          <div className="flex items-center gap-3 p-4 border border-gray-200 rounded-lg hover:border-emerald-500 hover:shadow-md transition-all cursor-pointer">
-            <FaUserCheck className="text-3xl text-emerald-600" />
-            <span className="font-medium text-gray-700">
-              Citizen Verification
-            </span>
-          </div>
-          <div className="flex items-center gap-3 p-4 border border-gray-200 rounded-lg hover:border-emerald-500 hover:shadow-md transition-all cursor-pointer">
-            <HiDocumentText className="text-3xl text-emerald-600" />
-            <span className="font-medium text-gray-700">Generate Reports</span>
-          </div>
         </div>
       </div>
-
-      {/* Service Categories */}
       <div className="bg-white rounded-lg shadow-sm p-3">
         <h2 className="text-xl font-bold text-emerald-900 mb-3">
           Application Categories

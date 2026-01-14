@@ -9,6 +9,9 @@ import Userlogin from "./Components/userlogin.jsx";
 import Adminlogin from "./Components/Adminlogin.jsx";
 import Admin from "./Components/Admin.jsx";
 import User from "./Components/User.jsx";
+import { p, path } from "framer-motion/client";
+import Dashboard from "./Components/Dashboard.jsx";
+import ApplicationIssueandReview from "./Components/ApplicationIssueandReview.jsx";
 
 const router = createBrowserRouter([
   {

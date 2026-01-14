@@ -1,7 +1,7 @@
 import { BiNews } from "react-icons/bi";
 const NewsSidebar = () => {
   return (
-    <div className="w-64 sm:w-72 md:w-80 lg:w-96 bg-gradient-to-b from-emerald-50 to-white/70 border-r border-emerald-200 h-screen overflow-y-auto sticky top-0 shadow-lg">
+    <div className="w-64 sm:w-72 md:w-80 lg:w-96 bg-gradient-to-b from-emerald-50 to-white/70 border-r border-emerald-200 h-full overflow-y-hidden sticky top-0 shadow-lg">
       <div className="p-6 border-b border-emerald-100 bg-emerald-100/50 backdrop-blur-sm">
         <h2 className="text-xl font-bold text-emerald-900 tracking-tight flex items-center gap-2">
           <BiNews /> Latest News

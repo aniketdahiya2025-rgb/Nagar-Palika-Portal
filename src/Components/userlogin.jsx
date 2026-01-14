@@ -4,7 +4,7 @@ import { FaUser } from "react-icons/fa";
 import { Link } from "react-router-dom";
 const Userlogin = () => {
   return (
-    <div className="w-full min-h-screen flex items-center justify-center bg-gradient-to-b from-emerald-50 to-white p-4">
+    <div className="w-full overflow-hidden flex items-center justify-center bg-gradient-to-b from-emerald-50 to-white p-4">
       <div className="flex flex-col items-center justify-center bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-shadow duration-300 w-full max-w-md p-8">
         <div className="flex items-center justify-center gap-3 mb-6">
           <div className="bg-emerald-100 p-3 rounded-full">

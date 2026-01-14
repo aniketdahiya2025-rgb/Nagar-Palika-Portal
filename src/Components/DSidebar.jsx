@@ -8,7 +8,7 @@ import {
   FiHelpCircle,
 } from "react-icons/fi";
 import { Link } from "react-router-dom";
-function DSidebar() {
+function DSidebar({ selectedMenu, setSelectedMenu }) {
   return (
     <div className="w-64 bg-emerald-900 h-full overflow-auto flex flex-col text-white shadow-lg">
       {/* User Profile Section */}
@@ -27,23 +27,25 @@ function DSidebar() {
       {/* Navigation Menu */}
       <nav className="flex-1 py-4">
         <ul className="space-y-1">
-          <li>
-            <a
-              href="#"
-              className="flex items-center gap-3 px-6 py-3 hover:bg-emerald-800 transition-colors"
-            >
+          <li
+            onClick={() => {
+              setSelectedMenu("dashboard");
+            }}
+          >
+            <Link className="flex items-center gap-3 px-6 py-3 hover:bg-emerald-800 transition-colors">
               <FiHome className="text-xl" />
               <span>Dashboard</span>
-            </a>
+            </Link>
           </li>
-          <li>
-            <a
-              href="#"
-              className="flex items-center gap-3 px-6 py-3 hover:bg-emerald-800 transition-colors"
-            >
+          <li
+            onClick={() => {
+              setSelectedMenu("issued - applications");
+            }}
+          >
+            <Link className="flex items-center gap-3 px-6 py-3 hover:bg-emerald-800 transition-colors">
               <FiFileText className="text-xl" />
-              <span>My Applications</span>
-            </a>
+              <span>Issue Application</span>
+            </Link>
           </li>
           <li>
             <a

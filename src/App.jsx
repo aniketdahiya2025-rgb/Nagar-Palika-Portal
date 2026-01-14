@@ -8,15 +8,18 @@ import NewsSidebar from "./Components/News.jsx";
 import AdminDashboard from "./Components/AdminDashboard.jsx";
 import AdminSidebar from "./Components/Adminsidebar.jsx";
 import { Outlet } from "react-router-dom";
+import ApplicationsProvider from "./Store/Application-store.jsx";
 function App() {
   return (
-    <div className="h-screen flex flex-col overflow-hidden">
-      <Titlebar />
-      <Navbar />
-      <div className="flex flex-1 overflow-hidden">
-        <Outlet />
+    <ApplicationsProvider>
+      <div className="h-screen flex flex-col overflow-visible">
+        <Titlebar />
+        <Navbar />
+        <div className="flex flex-1 overflow-visible">
+          <Outlet />
+        </div>
       </div>
-    </div>
+    </ApplicationsProvider>
   );
 }
 

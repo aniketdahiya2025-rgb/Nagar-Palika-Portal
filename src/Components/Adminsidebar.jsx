@@ -11,8 +11,10 @@ import {
 import { MdPendingActions } from "react-icons/md";
 import { HiDocumentText } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import { MdSpaceDashboard } from "react-icons/md";
+import { useState } from "react";
 
-function AdminSidebar() {
+function AdminSidebar({ selectedMenu, setSelectedMenu }) {
   return (
     <div className="w-64 bg-emerald-900 h-full overflow-auto flex flex-col text-white shadow-lg">
       {/* Admin Profile Section */}
@@ -34,13 +36,30 @@ function AdminSidebar() {
       {/* Navigation Menu */}
       <nav className="flex-1 py-4">
         <ul className="space-y-1">
-          <li>
+          <li
+            onClick={() => {
+              setSelectedMenu("Admin Dashboard");
+            }}
+          >
             <a
               href="#"
               className="flex items-center gap-3 px-6 py-3 hover:bg-emerald-800 transition-colors"
             >
-              <MdPendingActions className="text-xl" />
-              <span>Pending Applications</span>
+              <MdSpaceDashboard className="text-xl" />
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li
+            onClick={() => {
+              setSelectedMenu("applications");
+            }}
+          >
+            <a
+              href="#"
+              className="flex items-center gap-3 px-6 py-3 hover:bg-emerald-800 transition-colors"
+            >
+              <FiFileText className="text-xl" />
+              <span>All Applications</span>
             </a>
           </li>
           <li>
@@ -50,15 +69,6 @@ function AdminSidebar() {
             >
               <FiCheckCircle className="text-xl" />
               <span>Approve/Reject</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="flex items-center gap-3 px-6 py-3 hover:bg-emerald-800 transition-colors"
-            >
-              <FiFileText className="text-xl" />
-              <span>All Applications</span>
             </a>
           </li>
           <li>
